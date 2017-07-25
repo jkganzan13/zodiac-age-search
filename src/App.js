@@ -1,19 +1,22 @@
-import React, { Component } from 'react';
-import logo from './logo.svg';
+import React, {Component} from 'react';
+import {
+  InstantSearch,
+  SearchBox,
+} from 'react-instantsearch/dom';
 import './App.css';
+import SearchResults from './results/SearchResults';
 
 class App extends Component {
   render() {
     return (
-      <div className="App">
-        <div className="App-header">
-          <img src={logo} className="App-logo" alt="logo" />
-          <h2>Welcome to React</h2>
-        </div>
-        <p className="App-intro">
-          To get started, edit <code>src/App.js</code> and save to reload.
-        </p>
-      </div>
+      <InstantSearch
+        appId="DL19JXFUCV"
+        apiKey="1f15a473c0ccb51d02bd98ea15595500"
+        indexName="ffxii_za_items"
+      >
+        <SearchBox/>
+        <SearchResults/>
+      </InstantSearch>
     );
   }
 }

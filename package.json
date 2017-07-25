@@ -5,7 +5,8 @@
   "dependencies": {
     "react": "^15.6.1",
     "react-dom": "^15.6.1",
-    "react-instantsearch": "^4.0.9"
+    "react-instantsearch": "^4.0.9",
+    "prop-types": "latest"
   },
   "devDependencies": {
     "react-scripts": "1.0.10"
